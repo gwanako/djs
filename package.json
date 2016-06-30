@@ -1,0 +1,26 @@
+{
+  "name": "js-promise-graph",
+  "version": "0.1.0",
+  "description": "Nice promise-graph utility",
+  "main": "index.js",
+  "scripts": {
+    "test": "test"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/gwanako/js-promise-graph.git"
+  },
+  "keywords": [
+    "promise",
+    "async"
+  ],
+  "author": "gwanako@gmail.com",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/gwanako/js-promise-graph/issues"
+  },
+  "homepage": "https://github.com/gwanako/js-promise-graph#readme",
+  "dependencies": {
+    "promise": "^7.1.1"
+  }
+}
