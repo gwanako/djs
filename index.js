@@ -38,9 +38,9 @@ const parseargs = fn => {
 // console.log(parseargs(m => {}));
 // console.log(parseargs(n => n));
 
-module.exports('d', {
-  a: 'foo',
-  b: 42,
-  c: (a, b) => { return { a: a, b: b, c: 'lol' } },
-  d: c => new Promise(ok => setTimeout(() => ok(c), 200))
-}).then(console.log, console.error);
+// module.exports('d', {
+//   a: 'foo',
+//   b: 42,
+//   c: (a, b) => { return { a: a, b: b, c: 'lol' } },
+//   d: c => new Promise(ok => setTimeout(() => ok(c), 200))
+// }).then(console.log, console.error);
