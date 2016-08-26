@@ -1,9 +1,10 @@
 const Promise = require('promise');
 
-module.exports = function jscg(key, defs, items) {
+module.exports = function jscg(key, defs, items, ctx) {
   return step.call({
     defs: defs,
-    items: items || {}
+    items: items || {},
+    ctx: ctx
   }, key);
 };
 
@@ -16,7 +17,7 @@ const step = function step(key) {
     return this.items[key] = Promise.resolve(def);
   }
   const args = parseargs(def).map(step, this);
-  return this.items[key] = Promise.all(args).then(all => def.apply(this, all));
+  return this.items[key] = Promise.all(args).then(all => def.apply(this.ctx, all));
 }
 
 const ws = /\s+/g;
